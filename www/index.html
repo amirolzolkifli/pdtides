@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+
+    <title>Port Dickson Negeri Sembilan Tides</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
+
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
+        
+    <script src='cordova.js'></script>
+
+
+</head>
+
+<body>
+
+    <div id="splashscreen" class='ui-loader heavy'>
+        Tides in Port Dickson, Negeri Sembilan.
+        <br>
+        <br>
+        <span class='ui-icon ui-icon-loading spin'></span>
+        <h1>Starting app</h1>
+    </div>
+
+    <div class="view">
+        <header>
+            <h1>Port Dickson Tides</h1>
+        </header>
+
+        <div class="pages">
+
+             <!--Initial List of items-->
+            <div class="panel" data-title="Port Dickson Tides" id="list" data-selected="true">
+              <ul class="list">
+                <li><a href="#item1">Daily Tides</a></li>
+                <li><a href="#item2">Monthly Tides</a></li>
+                <li><a href="#item3">Yearly Tides</a></li>
+                <li><a href="#item4">About PDTides</a></li>
+              </ul>
+            </div>
+
+            <!--Detail View Pages for each list item-->
+            <div class="panel" data-title="Daily Tides" id="item1">
+                <iframe src="http://tides.mobilegeographics.com/locations/4893.html" style="border: 0; position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%">Your browser does not support iFrames.</iframe>
+            </div>
+
+            <div class="panel" data-title="Monthly Tides" id="item2">
+                <iframe src="http://tides.mobilegeographics.com/calendar/month/4893.html" style="border: 0; position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%">Your browser does not support iFrames.</iframe>
+            </div>
+
+            <div class="panel" data-title="Yearly Tides" id="item3">
+                <iframe src="http://tides.mobilegeographics.com/calendar/year/4893.html" style="border: 0; position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%">Your browser does not support iFrames.</iframe>
+            </div>
+            
+            <div class="panel" data-title="About PDTides" id="item4">
+                <p>Version: 1.0.0</p>
+                <p>PDTides is a simple application that fetch data for tides in Port Dickson, Negeri Sembilan.</p>
+                <p>The data is taken from http://tides.mobilegeographics.com.</p>
+                <p>If you have any questions, suggestions, or recommendations, please do not hesitate to contact support@jvcommerce.com.</p>
+                <p>Powered by <a href="http://www.portdicksonhub.com">PortDicksonHub.com</a></p>
+            </div>
+
+    </div>
+
+</body>
+</html>
